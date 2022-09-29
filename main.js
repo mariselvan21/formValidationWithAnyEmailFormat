@@ -48,14 +48,12 @@ function passwordValidation(){
     var numbers=["1","2","3","4","5","6","7","8","9","0"];
     for(i=0;i<passwordValue.length;i++){
         if(!numbers.includes(passwordValue[i])){
-            alert('Password Contain Only Numbers ')
-            
+            alert('Not Valid Password  ')
+            return
         }
-        else{
-            alert('Valid Password')
-        }
-        
+       
     }
+    alert('Valid Password')
     
     
 }
